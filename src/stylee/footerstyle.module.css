@@ -1,0 +1,73 @@
+footer{
+    background-color: var(--therd-color);
+    padding: 40px 0px;
+    border-top: 1px solid #474646;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+.container .logoAndSocail{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    gap: 15px;
+}
+.container .logoAndSocail .socailAccounts{
+    display: flex;
+    gap: 15px;
+    padding-left: 10px;
+}
+.container .logoAndSocail img{
+    width: 120px;
+}
+.container .infoAndContact{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .infoAndContact .info p{
+    font-size: 13px;
+    color: #c3c1c1;
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+.container .infoAndContact .info h5{
+    color: #c3c1c1;
+    font-size: 17px;
+    margin: 0px;
+    font-weight: 200;
+}
+.container .infoAndContact .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.container .link{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.container h2{
+    display: flex;
+    align-items: center;
+    color: #c3c1c1;
+}
+@media (max-width:400px) {
+    .container{
+        flex-direction: column;
+        gap: 20px;
+       align-items: center;
+    }
+    .container .logoAndSocail{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .container .infoAndContact .info{display: none;}
+}
+@media (max-width:380px) {
+    .container .logoAndSocail{
+        flex-direction: column;
+    }
+}

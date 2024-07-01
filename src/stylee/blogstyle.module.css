@@ -1,0 +1,75 @@
+.blog{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    background-color: var(--fourth-color);
+    cursor: pointer;
+}
+.blog .blogImg{
+    width: 100%;
+    height: 200px;
+   border-bottom: 1px solid var(--therd-color);
+    position: relative;
+    overflow: hidden;
+}
+.blog .blogImg img{
+    width: 100%;
+    height: 100%;
+}
+.blog .blogImg::before{
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    right: 50%;
+    background-color:rgba(76, 76, 76, 0.6);
+    z-index: 7;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.blog:hover .blogImg::before{
+    width: 110%;
+    height: 110%;
+    top: -5%;
+    right: -5%;
+}
+.blog h2{
+    color: white;
+    font-size: 22px;
+    padding: 15px;
+}
+.blog p{
+    color: #c3c1c1;
+    font-size: 14px;
+    padding: 0px 15px;
+}
+.blog .userInfo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 0px 15px 20px;
+}
+.blog .userInfo img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.blog .userInfo span{
+    color: #c3c1c1;
+}

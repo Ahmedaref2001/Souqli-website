@@ -1,0 +1,164 @@
+header {
+  background-color: var(--therd-color);
+  padding: 50px 0px;
+  margin-top: 65px;
+}
+header .link {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+header .ratingAndOffer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+header .ratingAndOffer .rating {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .ratingAndOffer .rating .img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: var(--fourth-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .ratingAndOffer .rating .img .shrimpIcon {
+  font-size: 30px;
+  color: white;
+}
+header .ratingAndOffer .rating .titleAndRating {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 10px;
+}
+header .ratingAndOffer .rating .titleAndRating p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  margin: 0px;
+}
+header .ratingAndOffer .rating .titleAndRating .icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .ratingAndOffer .rating .titleAndRating .icons span {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+header .ratingAndOffer .rating .titleAndRating .icons span:last-child {
+  padding: 5px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+header .ratingAndOffer .rating .titleAndRating span .icon {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header .ratingAndOffer .rating .deliveryBox {
+  display: flex;
+  justify-content: space-between;
+}
+header .ratingAndOffer .rating .deliveryBox span {
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+header .ratingAndOffer .rating .deliveryBox span::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: white;
+}
+header .ratingAndOffer .rating .deliveryBox span .icon {
+  font-size: 20px;
+  margin-right: 2px;
+}
+header .ratingAndOffer .rating .deliveryBox span:nth-child(2) .icon {
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+header .ratingAndOffer .offer {
+  background-color: var(--main-color);
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 350px;
+}
+header .ratingAndOffer .offer p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.3;
+}
+@media (max-width: 745px) {
+  header {
+    margin-top: 115px;
+  }
+}
+@media (max-width: 770px) {
+  header .ratingAndOffer {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 355px) {
+    html{
+        font-size: 13px;
+    }
+    header .ratingAndOffer .rating .img {
+        width: 50px;
+        height: 50px;
+    }
+ header .ratingAndOffer .rating .titleAndRating{
+    gap: 10px;
+  }
+  header .ratingAndOffer .rating .deliveryBox span::before {
+    left: -5px;
+  }
+}

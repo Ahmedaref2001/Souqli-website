@@ -1,0 +1,7 @@
+.page{
+    display: flex;
+}
+
+.manSection{
+    flex: 1;
+}

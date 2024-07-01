@@ -1,0 +1,140 @@
+.sellerInfo{
+    background-color: var(--fourth-color);
+    padding: 20px 30px 50px;
+}
+.sellerInfo .title {
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .sellerInfo .row{
+    justify-content: center;
+  }
+  .sellerInfo .imgBox{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+  .sellerInfo .imgBox img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+.sellerInfo .imgBox p{
+    color: white;
+    font-size: 26px;
+}
+.sellerInfo .imgBox .uplodadImg{
+    background-color: var(--main-color);
+    margin-bottom: 50px;
+    padding: 8px 20px;
+}
+.sellerInfo .imgBox .uplodadImg .uplodadImgIcon{
+    font-size: 22px;
+}
+.sellerInfo .imgBox .uplodadImg:hover{
+    background-color: var(--secend-color);
+}
+.sellerInfo .form{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+  gap: 25px 40px;
+}
+.sellerInfo form .filde{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
+}
+.sellerInfo form .filde .editIcon{
+  position: absolute;
+  right: 10px;
+  top: 33px;
+  font-size: 19px;
+  color: #787676;
+}
+.sellerInfo form .filde .fildeIcon{
+  position: absolute;
+  left: 8px;
+  top: 33px;
+  font-size: 20px;
+  color: #787676;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.sellerInfo form .filde label{
+  font-size: 18px;
+  color: white;
+  margin-left: 3px;
+}
+.sellerInfo form .filde input{
+  padding: 8px 20px 8px 32px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: var(--therd-color);
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.sellerInfo form .filde input[type=number]::-webkit-outer-spin-button,
+.sellerInfo form .filde input[type=number]::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+
+.sellerInfo form .filde input[type=number] {
+-moz-appearance: textfield;
+}
+.sellerInfo form .radiofilde{
+ align-self: flex-end;
+}
+.sellerInfo form .radiofilde div{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+.sellerInfo form .radiofilde label{
+  font-size: 18px;
+  color: white;
+}
+.sellerInfo form .radiofilde span{
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.sellerInfo form .radiofilde span label{
+  font-size: 16px;
+}
+.sellerInfo form .radiofilde span label:nth-child(2){
+  margin-right: 15px;
+}
+@media (max-width:790px) {
+  .sellerInfo .form{
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+  }
+}
+
+@media (max-width:520px) {
+  .sellerInfo .form{
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+  }
+  .sellerInfo .imgBox{
+    width: 100%;
+  }
+  .sellerInfo .imgBox img{
+    width: 230px;
+    height: 230px;
+  }
+}

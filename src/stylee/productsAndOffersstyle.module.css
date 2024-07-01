@@ -1,0 +1,12 @@
+.productsAndOffers{
+    background-color: var(--fourth-color);
+    padding: 60px 0px;
+}
+.productsAndOffers .row{
+    justify-content: space-between;
+}
+@media (max-width:570px) {
+    .productsAndOffers .row{
+        gap: 40px;
+    }
+}

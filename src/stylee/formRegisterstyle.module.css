@@ -1,0 +1,205 @@
+/* grouping selector */
+.reusapleForm .registerBox .inputFilld [type="button"],
+.reusapleForm .registerBox .otherOptins .socialsAccounts span,
+.reusapleForm .registerBox .otherOptins .link:hover {
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.reusapleForm .registerBox h2,
+.reusapleForm .registerBox h4,
+.reusapleForm .registerBox label,
+.reusapleForm .registerBox .checkboxFilld span {
+  color: white;
+}
+
+/* style form component */
+.reusapleForm {
+  background-color: var(--fourth-color);
+  padding: 60px 0px;
+}
+.reusapleForm .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.reusapleForm .boxImg .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.reusapleForm .registerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.reusapleForm .registerBox form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.reusapleForm .registerBox h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.reusapleForm .registerBox h4 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.reusapleForm .registerBox .inputFilld {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  position: relative;
+}
+.reusapleForm .registerBox .inputFilld label{
+    margin-left: 3px;
+}
+.reusapleForm .registerBox .inputFilld input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  background-color: #323232 ;
+  color: white;
+  font-size: 16px;
+}
+.reusapleForm .registerBox .inputFilld input::placeholder {
+  font-size: 14px;
+}
+.reusapleForm .registerBox .inputFilld .inputIcon {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+.reusapleForm .registerBox .checkboxFilld {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.reusapleForm .registerBox .checkboxFilld .checkbox {
+  display: flex;
+  gap: 5px;
+}
+.reusapleForm .registerBox .checkboxFilld span {
+  font-size: 18px;
+}
+.reusapleForm .registerBox .requerd {
+  color: red;
+  margin-bottom: 13px;
+}
+.reusapleForm .registerBox .inputFilld [type="button"] {
+  padding: 13px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: var(--main-color);
+  color: white;
+  margin-bottom: 15px;
+}
+.reusapleForm .registerBox .inputFilld [type="button"]:hover {
+  background-color: var(--secend-color);
+}
+.reusapleForm .registerBox .otherOptins {
+  width: 90%;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 20px;
+  position: relative;
+}
+.reusapleForm .registerBox .otherOptins::after {
+  position: absolute;
+  content: "";
+  width: 70%;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  border-top: 2px dashed var(--therd-color);
+}
+.reusapleForm .registerBox .otherOptins::before {
+  position: absolute;
+  content: "or";
+  width: 20px;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  color: var(--therd-color);
+  z-index: 4;
+  background-color: var(--fourth-color);
+  font-size: 18px;
+}
+.reusapleForm .registerBox .otherOptins .socialsAccounts {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+}
+.reusapleForm .registerBox .otherOptins .socialsAccounts span {
+  display: block;
+  padding: 5px 40px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  cursor: pointer;
+}
+.reusapleForm .registerBox .otherOptins .socialsAccounts span:hover {
+  background-color: var(--secend-color);
+}
+.reusapleForm .registerBox .otherOptins .link {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.reusapleForm .registerBox .otherOptins .link:hover {
+  color: var(--secend-color);
+}
+.reusapleForm .otherOptins .logo {
+  width: 120px;
+}
+
+@media (max-width:760px) {
+    .reusapleForm .row{
+        gap: 20px;
+      justify-content: center;
+    }
+}
+@media (max-width:400px) {
+    .reusapleForm .registerBox .otherOptins {
+        width: 100%;
+    }
+    .reusapleForm .registerBox .otherOptins .socialsAccounts span {
+        padding: 5px 30px;
+    }
+    .reusapleForm .registerBox .checkboxFilld span {
+      font-size: 16px;
+      }
+      .reusapleForm .registerBox .checkboxFilld label{
+        font-size: 15px;
+      }
+}

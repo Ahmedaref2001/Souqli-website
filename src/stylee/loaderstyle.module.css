@@ -1,0 +1,50 @@
+.pupupPage{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(22, 22, 22, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pupupPage .pupupBox{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.pupupPage .pupupBox span{
+    width:95px;
+    height: 95px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 25px dashed var(--main-color);
+    animation: loader 1.5s linear  infinite ;
+    -webkit-animation: loader 1.5s linear  infinite ;
+}
+.pupupPage .pupupBox h4{
+    color: var(--main-color);
+}
+@keyframes loader {
+    100%{
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+}
+}

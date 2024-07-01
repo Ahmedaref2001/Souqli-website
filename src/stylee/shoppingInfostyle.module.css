@@ -1,0 +1,80 @@
+.ShoppingInfoBox{
+    width: 340px;
+    background-color: var(--main-color);
+    padding:30px  25px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.ShoppingInfoBox .step{
+    color: white;
+    font-size: 15px;
+}
+.ShoppingInfoBox h4{
+    color: white;
+    font-weight: 700;
+}
+.ShoppingInfoBox form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 0px;
+}
+.ShoppingInfoBox form .filde{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.ShoppingInfoBox form .filde label{
+    color: white;
+    margin-left: 3px;
+}
+.ShoppingInfoBox form .filde input{
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: transparent;
+    border-bottom: 1px solid #333;
+}
+
+.ShoppingInfoBox form .radiofilde div{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 5px;
+}
+.ShoppingInfoBox form .radiofilde label{
+    color: white;
+}
+.ShoppingInfoBox form .radiofilde span{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+.ShoppingInfoBox form .radiofilde span label:nth-child(2){
+    margin-right: 15px;
+}
+.ShoppingInfoBox .button{
+    width: 100%;
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    font-weight: 600;
+    border: none;
+}
+.ShoppingInfoBox .button .arrowRight{
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+@media(max-width: 992px) {
+    .ShoppingInfoBox{
+       width: 100%;
+    }
+}

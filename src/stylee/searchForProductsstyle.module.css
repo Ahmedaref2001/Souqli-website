@@ -1,0 +1,197 @@
+.nav {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  width: 100%;
+  padding: 15px 20px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 88;
+  background-color: var(--main-color);
+}
+.nav .logoAndTitle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav .logoAndTitle img {
+  width: 50px;
+}
+.nav .logoAndTitle p {
+  color: white;
+  font-size: 18px;
+  margin: 0px;
+}
+.nav .userInfoAndSearch {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav .userInfoAndSearch .searchFilld {
+  position: relative;
+  width: 300px;
+}
+.nav .userInfoAndSearch .searchFilld input {
+    width: 300px;
+  background-color: var(--therd-color);
+  padding: 5px 10px 7px 35px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  color: white;
+}
+.nav .userInfoAndSearch .searchFilld input::placeholder{
+   font-size: 0.9rem;
+}
+.nav .userInfoAndSearch .searchFilld .searchIcon {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.nav .userInfoAndSearch .link {
+  padding: 7px 25px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 17px;
+  color: white;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.nav .userInfoAndSearch .regesterLinks{
+    display: flex;
+}
+.nav .userInfoAndSearch .regesterLinks .link:last-child {
+  background-color: white;
+  color: black;
+}
+.nav .userInfoAndSearch .link:hover {
+  background-color: var(--secend-color);
+}
+.nav .userInfoAndSearch .userInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.nav .userInfoAndSearch .userInfo .link {
+  padding: 7px 15px;
+  color: rgb(224, 152, 89);
+}
+.nav .userInfoAndSearch .userInfo .cartIcon {
+  font-size: 33px;
+  color: white;
+  cursor: pointer;
+}
+.nav .userInfoAndSearch .userInfo span{
+    position: relative;
+}
+.nav .userInfoAndSearch .userInfo span::before{
+    position: absolute;
+    content: "5";
+    font-size: 14px;
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    color: white;
+    background-color: var(--therd-color);
+    bottom: -8px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+.nav .userInfoAndSearch .userInfo .userEmail {
+  width: 80px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: white;
+  font-size: 17px;
+  margin: 0px;
+  cursor: pointer;
+}
+.nav .userInfoAndSearch .userInfo .userImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+@media (max-width: 1155px) {
+   
+  .nav .userInfoAndSearch {
+    width: 60%;
+}
+  .nav .userInfoAndSearch .regesterLinks .link {
+    padding: 5px 18px;
+    font-size: 1rem;
+  }
+  .nav .userInfoAndSearch .userInfo .userEmail {
+    display: none;
+  }
+}
+@media (max-width: 830px) {
+    .nav .userInfoAndSearch .searchFilld {
+        width: 250px;
+      }
+      .nav .userInfoAndSearch .searchFilld input {
+          width: 250px;
+        }
+}
+@media (max-width: 745px) {
+    html{
+        font-size: 15px;
+    }
+  .nav {
+    flex-direction: column;
+  }
+  .nav .userInfoAndSearch {
+    width: 100%;
+  }
+   .nav .userInfoAndSearch .userInfo {
+    gap: 10px;
+  }
+}
+@media (max-width: 464px) {
+    .nav{
+        padding: 15px 10px;
+    }
+    .nav .userInfoAndSearch .searchFilld {
+        width: 50%;
+      }
+      .nav .userInfoAndSearch .searchFilld input {
+          width: 100%;
+        }
+        .nav .userInfoAndSearch .regesterLinks .link {
+            padding: 7px 11px;
+          }
+}
+

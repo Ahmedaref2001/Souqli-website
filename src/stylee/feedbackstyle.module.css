@@ -1,0 +1,162 @@
+.title{
+  /* display: flex;
+  justify-content: center; */
+  color: white;
+margin: 70px 20px 0px;
+}
+
+.addFeedbackBox {
+  margin: 40px 20px 0px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: var(--therd-color);
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.addFeedbackBox .img,.feedbackBox .img{
+    position: relative;
+}
+.addFeedbackBox .img img,.allFeedback .feedbackBox img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.addFeedbackBox .img .check,.feedbackBox .img .check{
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    font-size: 18px;
+    color: rgb(146, 146, 247);
+    overflow: hidden;
+}
+.addFeedbackBox .addFeedback {
+  flex: 1;
+}
+.addFeedbackBox .addFeedback .feedbackText {
+    padding-top: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    resize: none;
+    border-bottom: 1px solid var(--main-color);
+    color: #eee;
+    line-height: 1.2;
+    min-height: 30px;
+    max-height: auto;
+    scrollbar-width: none;
+    white-space: pre-wrap;
+}
+
+.addFeedbackBox .addFeedback .icons {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.addFeedbackBox .addFeedback .icons .button {
+  padding: 4px 15px;
+  border-radius:15px ;
+  -webkit-border-radius:15px ;
+  -moz-border-radius:15px ;
+  -ms-border-radius:15px ;
+  -o-border-radius:15px ;
+  border: none;
+}
+.addFeedbackBox .addFeedback .icons .button:first-child{
+    background-color: var(--main-color);
+}
+.addFeedbackBox .addFeedback .icons .button:first-child:hover{
+    background-color: var(--secend-color);
+}
+.addFeedbackBox .addFeedback .icons .button:last-child{
+    background-color: rgb(197, 1, 1);
+}
+.addFeedbackBox .addFeedback .icons .button:last-child:hover{
+    background-color: rgb(169, 2, 2);
+}
+
+.allFeedback {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 40px 20px 0px;
+  padding: 20px 0px;
+  align-items: flex-start;
+}
+.allFeedback .feedbackBox {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background-color: var(--therd-color);
+  padding: 20px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  position: relative;
+}
+.allFeedback .feedbackBox .feedbackInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.allFeedback .feedbackBox .feedbackInfo p {
+  margin: 0px;
+  overflow-wrap: anywhere;
+  line-height: 1.2;
+}
+.allFeedback .feedbackBox .feedbackInfo > p {
+  color: #ddd;
+}
+.allFeedback .feedbackBox .feedbackInfo .link {
+  text-decoration: none;
+  color: var(--main-color);
+}
+.allFeedback .feedbackBox .feedbackInfo div p {
+  color: #ddd;
+}
+.allFeedback .feedbackBox .icon {
+  font-size: 20px;
+  color: white;
+}
+.allFeedback .feedbackBox span {
+  align-self: flex-end;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  cursor: pointer;
+}
+.allFeedback .feedbackBox span {
+  background-color: rgb(197, 1, 1);
+}
+
+@media (max-width: 365px) {
+  .allFeedback {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  }
+  .allFeedback .feedbackBox,
+  .allFeedback .feedbackBox .feedbackInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+}

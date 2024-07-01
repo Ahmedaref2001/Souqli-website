@@ -1,0 +1,14 @@
+.AllProductsBox{
+    background-color: var(--fourth-color);
+    padding-top: 40px;
+}
+.AllProductsBox h3{
+    color: white;
+}
+.AllProductsBox .products{
+    margin-top: 30px;
+    padding-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 20px;
+}

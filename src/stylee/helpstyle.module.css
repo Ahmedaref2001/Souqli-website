@@ -1,0 +1,45 @@
+.pupupPage{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(22, 22, 22, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pupupPage .pupupBox{
+    width: 350px;
+    height: 500px;
+    padding:15px 25px;
+    background-color: var(--therd-color);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 8px solid var(--fourth-color);
+    outline: 1px solid var(--therd-color);
+    position: relative;
+}
+.pupupPage .pupupBox h3{
+    color: #999;
+}
+.pupupPage .pupupBox .helpIcon{
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+.pupupPage .pupupBox p{
+    color: #999;
+}
+.pupupPage .pupupBox .link{
+    background-color: var(--main-color);
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+.pupupPage .pupupBox .link:hover{
+    background-color: var(--secend-color);
+}
