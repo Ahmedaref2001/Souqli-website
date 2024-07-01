@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Souqli-website/static/css/main.b1a157be.css",
+    "main.js": "/Souqli-website/static/js/main.ab02c97a.js",
+    "static/js/453.97d20337.chunk.js": "/Souqli-website/static/js/453.97d20337.chunk.js",
+    "static/media/group.png": "/Souqli-website/static/media/group.a8e4898759820ea97776.png",
+    "static/media/group (1).png": "/Souqli-website/static/media/group (1).0b5f238071996a1e2410.png",
+    "static/media/ 1.png": "/Souqli-website/static/media/d443c970c669eb945ff047dd6dbd171b 1.7febdca1b7cea785f4e9.png",
+    "static/media/logo1.png": "/Souqli-website/static/media/logo1.532b72fb0a7eeb531168.png",
+    "static/media/special-deal-super-offer-upto-60-parcent-off-isolated-3d-render-with-editable-text_47987-15330.png": "/Souqli-website/static/media/special-deal-super-offer-upto-60-parcent-off-isolated-3d-render-with-editable-text_47987-15330.7c7f70015f3676c530fa.png",
+    "static/media/photo-1542291026-7eec264c27ff.png": "/Souqli-website/static/media/photo-1542291026-7eec264c27ff.d94143a2636beca2bc28.png",
+    "static/media/logo2.png": "/Souqli-website/static/media/logo2.f8947d0c82d625ffe77b.png",
+    "index.html": "/Souqli-website/index.html",
+    "main.b1a157be.css.map": "/Souqli-website/static/css/main.b1a157be.css.map",
+    "main.ab02c97a.js.map": "/Souqli-website/static/js/main.ab02c97a.js.map",
+    "453.97d20337.chunk.js.map": "/Souqli-website/static/js/453.97d20337.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b1a157be.css",
+    "static/js/main.ab02c97a.js"
+  ]
+}
