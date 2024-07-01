@@ -3,10 +3,13 @@ import shoppingInfostyle from '../stylee/shoppingInfostyle.module.css'
 import { Button } from 'react-bootstrap';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import axios from "axios"
+import PupUp from "./PupUp";
 import Loader from '../components/Loader'
 export const ShoppingInfo = ({checkOutStep,setCheckOutStep}) => {
 
   const[loadind,setLoadind]=useState(false)
+
+  const[saveSuccessfully,setSveSuccessfully]=useState(false)
 
  //get userInfo from localStorage
  const [userAccountInfo, setUserAccountInfo] = useState(
@@ -36,6 +39,7 @@ const [age, setAge] = useState(
 
 
 function hindelPayment() {
+
   setLoadind(true);
 
   let orders = JSON.parse(localStorage.getItem("orders")) || []; 
@@ -60,23 +64,30 @@ function hindelPayment() {
 
       axios.post(`https://souqlysystemsite.runasp.net/api/Home/Make-Order/${userAccountInfo.id}`, orderItems)
         .then((response) => {
-          console.log(response);
           localStorage.removeItem("orders");
           setCheckOutStep(2);
+          setSveSuccessfully(true)
         })
         .catch((error) => {
           console.log(error);
+          setSveSuccessfully(true)
         })
         .finally(() => {
           setLoadind(false);
+          setSveSuccessfully(true)
         });
     })
     .catch((error) => {
       console.log(error);
       setLoadind(false); 
+      setSveSuccessfully(true)
     });
 }
 
+
+function hidePoupUp(){
+  setSveSuccessfully(false)
+}
 
 
 
@@ -84,6 +95,8 @@ function hindelPayment() {
   return (
     <>
     {loadind&&<Loader/>}
+    {saveSuccessfully && <PupUp page="/" hidePoupUp={hidePoupUp} />}
+
     <div className={shoppingInfostyle.ShoppingInfoBox}>
         <p className={shoppingInfostyle.step}>Checkout Step {checkOutStep}/2</p>
         <h4>Shopping Info</h4>

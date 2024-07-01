@@ -21,6 +21,7 @@ footer{
 }
 .container .logoAndSocail img{
     width: 120px;
+    cursor: pointer;
 }
 .container .infoAndContact{
     display: flex;

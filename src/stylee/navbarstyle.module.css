@@ -113,7 +113,7 @@ nav .allLinks .userInfo .cartIcon {
   color: white;
   cursor: pointer;
 }
-nav .allLinks .userInfo span{
+/* nav .allLinks .userInfo span{
   position: relative;
 }
 nav .allLinks .userInfo span::before{
@@ -135,7 +135,7 @@ nav .allLinks .userInfo span::before{
   justify-content: center;
   align-items: center;
   z-index: 99999;
-}
+} */
 nav .allLinks .userInfo .userEmail {
   width: 80px;
   white-space: nowrap;

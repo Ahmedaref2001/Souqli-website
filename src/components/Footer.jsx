@@ -1,22 +1,23 @@
-import React,{useEffect,useState} from "react";
+import React,{useState} from "react";
 import footerstyle from "../stylee/footerstyle.module.css";
 import logo from "../images/logo1.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Container } from "react-bootstrap";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { IoMdCall } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
-export const Footer = () => {
+export const Footer = ({contactElement}) => {
   const [isSeller,setIsSeller]=useState(JSON.parse(localStorage.getItem("isvendor")))
 
+  const navigate=useNavigate()
     
   return (
-    <footer id="contact">
+    <footer ref={contactElement}>
       <Container className={footerstyle.container}>
         <div className={footerstyle.logoAndSocail}>
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo"  onClick={()=>{isSeller?navigate("/MyProductsPage"):navigate("/")}}/>
           <div className={footerstyle.socailAccounts}>
             <Link className={footerstyle.link}>
               <IoLogoInstagram />

@@ -6,7 +6,7 @@ import img1 from "../images/images (4).jpeg";
 import userImg from "../images/images.png";
 import Blog from "./Blog";
 import { Container } from "react-bootstrap";
-export const OurBlog = () => {
+export const OurBlog = ({blogElement}) => {
   let blogItems = [
     {
       id: "1",
@@ -35,7 +35,7 @@ export const OurBlog = () => {
   ];
   const [bloges, setBloges] = useState(blogItems);
   return (
-    <div className={ourBlog.blogBox} id="blogid">
+    <div className={ourBlog.blogBox} ref={blogElement}>
      <Container>
      <h3>Read Our Blog</h3>
       <div className={ourBlog.allBlog}>

@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 import BoxOfCategorie from "./BoxOfCategorie";
 import axios from "axios";
 import Loader from '../components/Loader'
-export const Categories = () => {
+export const Categories = ({categoryElement}) => {
   const[loadind,setLoadind]=useState(false)
 
   useEffect(() => {
@@ -24,11 +24,13 @@ export const Categories = () => {
   
   const [categories, setCategories] = useState([]);
 
+  
+
   return (
     <>
     {loadind&&<Loader/>}
 
-    <div className={categoriesstyle.categoriesBox} id="categoriesId">
+    <div className={categoriesstyle.categoriesBox} ref={categoryElement}>
       <Container>
         <h2>Categories</h2>
         <div className={categoriesstyle.allCategories}>

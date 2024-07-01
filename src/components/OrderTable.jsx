@@ -40,7 +40,6 @@ useEffect(()=>{
         setLoadind(true)
         axios.get(`https://souqlysystemsite.runasp.net/api/Home/AddToCartInfo/${id}`).then((response)=>{
             let proData=response.data
-            console.log(proData)
             setName(proData.name)
             setCategory(proData.category)
             setImageUrl(proData.imageUrl)
