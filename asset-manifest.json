@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Souqli-website/static/css/main.b1a157be.css",
-    "main.js": "/Souqli-website/static/js/main.ab02c97a.js",
+    "main.css": "/Souqli-website/static/css/main.3b19dceb.css",
+    "main.js": "/Souqli-website/static/js/main.7e826bda.js",
     "static/js/453.97d20337.chunk.js": "/Souqli-website/static/js/453.97d20337.chunk.js",
     "static/media/group.png": "/Souqli-website/static/media/group.a8e4898759820ea97776.png",
     "static/media/group (1).png": "/Souqli-website/static/media/group (1).0b5f238071996a1e2410.png",
@@ -11,12 +11,12 @@
     "static/media/photo-1542291026-7eec264c27ff.png": "/Souqli-website/static/media/photo-1542291026-7eec264c27ff.d94143a2636beca2bc28.png",
     "static/media/logo2.png": "/Souqli-website/static/media/logo2.f8947d0c82d625ffe77b.png",
     "index.html": "/Souqli-website/index.html",
-    "main.b1a157be.css.map": "/Souqli-website/static/css/main.b1a157be.css.map",
-    "main.ab02c97a.js.map": "/Souqli-website/static/js/main.ab02c97a.js.map",
+    "main.3b19dceb.css.map": "/Souqli-website/static/css/main.3b19dceb.css.map",
+    "main.7e826bda.js.map": "/Souqli-website/static/js/main.7e826bda.js.map",
     "453.97d20337.chunk.js.map": "/Souqli-website/static/js/453.97d20337.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1a157be.css",
-    "static/js/main.ab02c97a.js"
+    "static/css/main.3b19dceb.css",
+    "static/js/main.7e826bda.js"
   ]
 }
